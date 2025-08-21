@@ -1,0 +1,23 @@
+{
+    "name": "whatsapp-autosender",
+    "version": "1.0.0",
+    "description": "Automate sending messages to a WhatsApp group at specific times",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "dev": "nodemon index"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.1",
+        "moment-timezone": "^0.6.0",
+        "node-cron": "^3.0.3",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.26.0"
+    },
+    "overrides": {
+        "puppeteer": {
+            "tar-fs": "^3.0.6",
+            "ws": "^8.18.0"
+        }
+    }
+}
